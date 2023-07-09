@@ -129,8 +129,8 @@ function Create({ test, isEdit, selectkey, data }) {
           )}
         </Col>
       </Row>
-      <Button
-        style={{ position: "absolute", bottom: "18%" }}
+      <Button className="display_btn"
+       
         onClick={display}
         variant="primary"
       >
