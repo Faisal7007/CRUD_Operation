@@ -1,0 +1,25 @@
+
+
+
+.main_screen{
+    background-color:  lightgray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     .column{
+        display: flex;
+        flex-direction: column;
+       input{
+        margin: 20px 0 ;
+        padding: 10px;
+        border-radius: 5px;
+       }
+     }
+     .title{
+      text-align: center;
+     }
+    //  .submit_btn{
+    //   width: fit-content;
+    //  }
+}
