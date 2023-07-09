@@ -121,6 +121,7 @@ function Create({ test, isEdit, selectkey, data }) {
             </Button>
           ) : (
             <Button
+            className="submit_btn"
               onClick={username && email && number ? submit : isreq}
               variant="primary"
             >
