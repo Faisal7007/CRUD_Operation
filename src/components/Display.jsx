@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-
+import './Display.scss'
 import { useNavigate } from "react-router";
 import { Button, Container, Table } from "react-bootstrap";
 function Display({ editdata, isNotEdit }) {
@@ -19,10 +19,10 @@ function Display({ editdata, isNotEdit }) {
   }
 
   return (
-    <Container className="main-display" fluid>
+    <Container className="main_display" fluid>
       <h1 style={{ textAlign: "center" }}>List Of User Details</h1>
       <Button
-        className="mb-2"
+        className="mb-2 goto_create_btn"
         onClick={() => {
           isNotEdit();
           navigate("/");
@@ -54,7 +54,7 @@ function Display({ editdata, isNotEdit }) {
                   <td>{data.number}</td>
 
                   <td style={{ textAlign: "end" }}>
-                    <Button
+                    <Button className="action_btn"
                       onClick={() => {
                         navigate("/");
                         editdata(index);
@@ -65,7 +65,7 @@ function Display({ editdata, isNotEdit }) {
                     </Button>{" "}
                   </td>
                   <td style={{ textAlign: "start" }}>
-                    <Button
+                    <Button className="action_btn"
                       variant="danger"
                       onClick={() => {
                         deletedata(index);
